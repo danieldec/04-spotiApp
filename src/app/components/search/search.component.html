@@ -4,15 +4,18 @@
     </div>
 </div>
 
-
+<!--
 <div class="card-columns m-5">
     <div *ngFor="let artista of artistas" class="card">
-        <img class="card-img-top" [src]="artista.images[0].url" alt="Card image cap">
+        <img class="card-img-top" [src]="artista.images | noimage" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{artista.name}}</h5>
-            <!-- <p class="card-text">
+            <p class="card-text">
                 <span *ngFor="let artista of cancion.artists" class="badge badge-pill badge-primary">{{artista.name}}</span>
-            </p> -->
+            </p>
         </div>
     </div>
-</div>
+</div> -->
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<app-tarjetas *ngIf="!loading" [items]="artistas" ></app-tarjetas>
