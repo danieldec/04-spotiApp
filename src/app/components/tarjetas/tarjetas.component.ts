@@ -17,8 +17,6 @@ export class TarjetasComponent {
     } else {
       artistaId = item.artists[0].id;
     }
-    // window.console.log(item);
-    // window.console.log(artistaId);
     this.router.navigate(['/artist', artistaId]);
   }
 }

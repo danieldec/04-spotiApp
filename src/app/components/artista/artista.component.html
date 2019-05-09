@@ -32,7 +32,8 @@
           <td> {{track.name}} </td>
           <td>
             <!-- <audio [src]="track.preview_url" controls></audio> -->
-            <iframe src="https://open.spotify.com/embed/album/7h9NpO38NZFD8vcEHw4lkZ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <!-- <iframe src="https://open.spotify.com/embed/album/7h9NpO38NZFD8vcEHw4lkZ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+            <!-- <iframe [src] = "track.uri | domseguro : https://open.spotify.com/embed?uri=" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
           </td>
         </tr>
       </tbody>

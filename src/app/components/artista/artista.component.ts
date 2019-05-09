@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SpotifyService } from 'src/app/services/spotify.service';
-
+import {  } from 'src/app/pipes/domseguro.pipe';
 @Component({
   selector: 'app-artista',
   templateUrl: './artista.component.html',
